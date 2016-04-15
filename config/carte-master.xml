@@ -1,0 +1,10 @@
+<slave_config>
+  <slaveserver>
+    <name>@@MASTER_NAME@@</name>
+    <hostname>@@MASTER_HOST@@</hostname>
+    <port>8080</port>
+    <username>@@MASTER_USER@@</username>
+    <password>@@MASTER_PWD@@</password>
+    <master>@@IS_MASTER@@</master>
+  </slaveserver>
+</slave_config>
