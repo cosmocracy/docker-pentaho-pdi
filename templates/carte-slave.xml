@@ -1,8 +1,10 @@
 <slave_config>
   <slaveserver>
     <name>@@SLAVE_NAME@@</name>
-    <hostname>@@MASTER_HOST@@</hostname>
+    <hostname>@@HOST@@</hostname>
     <port>8080</port>
+    <username>@@SLAVE_USER@@</username>
+    <password>@@SLAVE_PWD@@</password>
   </slaveserver>
 
 
@@ -13,13 +15,11 @@
       <port>@@MASTER_PORT@@</port>
       <username>@@MASTER_USER@@</username>
       <password>@@MASTER_PWD@@</password>
-      <master>@@IS_MASTER@@</master>
       <master>Y</master>
     </slaveserver>
   </masters>
 
-
-  <report_to_masters>Y</report_to_masters>
+  <report_to_masters>@@SLAVE_REPORT_MASTER@@</report_to_masters>
 
   <max_log_lines>10000</max_log_lines>
   <max_log_timeout_minutes>1440</max_log_timeout_minutes>

@@ -1,0 +1,3 @@
+#!/bin/bash
+cd ${PDI_HOME}
+sudo -H -u pentaho ./carte.sh ./config/carte-config.xml
